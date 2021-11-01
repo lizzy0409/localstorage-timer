@@ -1,5 +1,5 @@
-window.addEventListener('load', () => {
-  function localstorageTimer(daysToEnd, selectorForTimer, timerId) {
+function localstorageTimer(daysToEnd, selectorForTimer, timerId) {
+  window.addEventListener('DOMContentLoaded', () => {
 
     // Запускает таймер
     // Принимает окончание таймера и строку-селектор для вставки таймера
@@ -50,6 +50,6 @@ window.addEventListener('load', () => {
     }
 
     runTimer(localStorage.getItem('timerEnd'), selectorForTimer)
-  }
+  })
+}
 
-})
